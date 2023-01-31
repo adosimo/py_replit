@@ -1,2 +1,4 @@
 # py_replyit
-playing with replit hosting
+Playing with replit hosting
+
+Simple web app done using Flask to try replit.com hosting  
