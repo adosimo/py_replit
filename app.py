@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify, abort
+from flask import Flask, request, render_template, jsonify
 from datetime import datetime
 
 app = Flask(__name__)
@@ -28,6 +28,8 @@ def sendData():
 def too_busy(e):
     return jsonify(error="way too busy"), 503
 
+def main():
+  app.run(host='0.0.0.0', port=8080, debug=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    main()
