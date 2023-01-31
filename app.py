@@ -18,7 +18,7 @@ def apps():
 @app.route('/api/v1/senddata', methods=['POST'])
 def sendData():
     data = {
-        "resp": f'date time from the server is: {datetime.now()}  - got {request.json["fromUI"]}'
+        "resp": f'date time from the server is: {datetime.now()}  - Got in req: {request.json["fromUI"]}'
     }
 
     return jsonify(data)
